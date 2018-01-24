@@ -1,14 +1,13 @@
-.simple {
-  width: 600px;
+.simple .demo {
 }
 
-.simple ul {
+.simple .demo ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.simple ul li {
+.simple .demo ul li {
   border: 1px solid #ccc;
   border-radius: 4px;
   margin: 8px;

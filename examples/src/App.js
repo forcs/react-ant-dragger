@@ -19,7 +19,14 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Examples For &lt;React-Ant-Dragger /&gt;</h1>
+          <div className="header-wrapper">
+            <h1 className="App-title">Examples for &lt;
+              <span style={{color: 'rgb(255, 198, 109)'}}>
+                React-Ant-Dragger&nbsp;
+              </span>
+              /&gt;
+            </h1>
+          </div>
         </header>
         <Router>
           <div className="main">
