@@ -271,8 +271,8 @@ yarn examples
 
 ## Links
 
-[React DnD](http://react-dnd.github.io/react-dnd/)
-[React](https://reactjs.org/)
+- [React DnD](http://react-dnd.github.io/react-dnd/)
+- [React](https://reactjs.org/)
 
 ## License
 
