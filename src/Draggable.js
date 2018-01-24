@@ -157,11 +157,13 @@ class Draggable extends React.Component {
       })
     }
 
-    child = connectDropTarget(child)
+    if (!draggerPreview) {
+      child = connectDragPreview(child)
+    }
     if (dragHandlerType === 'default') {
       child = connectDragSource(child)
     }
-    return child
+    return connectDropTarget(child)
   }
 }
 
