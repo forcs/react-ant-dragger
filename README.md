@@ -82,7 +82,7 @@ class Container extends React.Component {
 - export default Container
 + export default DraggerContext(Container)
 ```
-然后，对展示组件<code><List /></code>添加如下代码
+然后，对展示组件<code>List</code>添加如下代码
 ```diff
 // List.js
 import React from 'react'
