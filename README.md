@@ -14,7 +14,7 @@ yarn add react-ant-dragger
 ```
 
 ## 使用
-假设存在一个容器组件<code><Container /></code>和一个展示组件<code><List /></code>，代码如下：
+假设存在一个容器组件<code>Container</code>和一个展示组件<code>List</code>，代码如下：
 ```js
 //Container.js
 import React from 'react'
@@ -57,7 +57,7 @@ export default () => {
   )
 }
 ```
-我们想对<code><List /></code>的每个item<code><li /></code>实现拖动效果应该怎么做呢？
+我们想对<code>List</code>的每个item<code>li</code>实现拖动效果应该怎么做呢？
 
 首先，容器组件用`DraggerContext`进行包装，例如：
 ```diff
@@ -118,5 +118,7 @@ export default () => {
   )
 }
 ```
+
 DONE！:tada::tada::tada:
+
 ![](http://oz04bqks1.bkt.clouddn.com/18-1-24/90006750.jpg)
