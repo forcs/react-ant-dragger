@@ -9,7 +9,7 @@
   "scripts": {
     "clean:lib": "rimraf lib",
     "clean": "rimraf lib dist",
-    "examples:install": "cd examples && npm install",    
+    "examples:install": "cd examples && npm install",
     "examples": "cd examples && npm run start",
     "build:lib": "npm run clean:lib && babel --no-babelrc src --out-dir lib --presets=env,stage-2,react",
     "build": "npm run clean && npm run build:lib && rollup --config build/rollup.config.js",

@@ -126,12 +126,13 @@ DONE！:tada::tada::tada:
 ## 处理事件
 
 支持如下事件：
-- **onDragStart** 开始拖动
-- **onDragEnd** 拖动结束
-- **onDragEnter** 拖动时进入某个目标元素
-- **onDragLeave** 拖动时离开某个目标元素
-- **onDragging** 拖动中
-- **onDrop** 松开时
+- **onDragStart** 开始拖动时触发
+- **onDragEnd** 拖动结束时触发
+- **onDragEnter** 拖动元素进入某个目标元素时触发
+- **onDragLeave** 拖动元素离开某个目标元素时触发
+- **onDragging** 拖动过程中触发
+- **onDrop** 松开时触发
+- **onDragEdge** 拖动到容器边界时触发 :dizzy:
 
 ```js
 import React from 'react'
@@ -149,6 +150,7 @@ export default class Events extends React.Component {
     this.handleDragging = this.handleDragging.bind(this)
     this.handleDragEnter = this.handleDragEnter.bind(this)
     this.handleDragLeave = this.handleDragLeave.bind(this)
+    this.handleDragEdge = this.handleDragEdge.bind(this)
 
     this.state = {
       data: [
@@ -197,6 +199,16 @@ export default class Events extends React.Component {
     this.printMessage(`onDragEnd:${target} ${source}`)
   }
 
+  handleDragEdge ({ strike }) {
+    const {
+      left,
+      top,
+      right,
+      bottom
+    } = strike
+    this.printMessage(`onDragEdge:left ${left} top ${top} right ${right} bottom ${bottom}`)
+  }
+
   render () {
     const { data, messages } = this.state
     return (
@@ -209,6 +221,7 @@ export default class Events extends React.Component {
             onDragLeave={this.handleDragLeave}
             onDrop={this.handleDrop}
             onDragEnd={this.handleDragEnd}
+            onDragEdge={this.handleDragEdge}
           >
             <ul>
             {
