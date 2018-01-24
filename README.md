@@ -108,7 +108,7 @@ export default () => {
         list.map((item, index) => (
 -          <li key={index}>{item}</li>
 +          // dragToken is required
-+          <Draggable key={index} dragToken={() => (index + 1)}>
++          <Draggable key={index} dragToken={() => item)}>
 +            <li>{item}</li>
 +          </Draggable>
         ))
