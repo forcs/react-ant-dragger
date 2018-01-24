@@ -50,7 +50,6 @@ export default () => {
     <ul>
     {
       list.map((item, index) => (
-        // dragToken is required
         <li key={index}>{item}</li>
       ))
     }
@@ -107,8 +106,8 @@ export default () => {
       <ul>
       {
         list.map((item, index) => (
-          // dragToken is required
 -          <li key={index}>{item}</li>
++          // dragToken is required
 +          <Draggable key={index} dragToken={() => (index + 1)}>
 +            <li>{item}</li>
 +          </Draggable>
