@@ -122,3 +122,19 @@ export default () => {
 DONE！:tada::tada::tada:
 
 ![](http://oz04bqks1.bkt.clouddn.com/18-1-24/90006750.jpg)
+
+## Examples
+
+```shell
+git clone https://github.com/forcs/react-ant-dragger.git
+cd react-ant-dragger
+# npm
+npm run examples:install
+npm run examples
+
+# yarn
+yarn examples:install
+yarn examples
+```
+
+![](http://oz04bqks1.bkt.clouddn.com/18-1-24/85085342.jpg)
