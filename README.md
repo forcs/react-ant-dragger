@@ -268,3 +268,12 @@ yarn examples
 ```
 
 ![](http://oz04bqks1.bkt.clouddn.com/18-1-24/85085342.jpg)
+
+## Links
+
+[React DnD](http://react-dnd.github.io/react-dnd/)
+[React](https://reactjs.org/)
+
+## License
+
+MIT
