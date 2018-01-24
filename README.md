@@ -238,7 +238,7 @@ export default class Events extends React.Component {
 }
 ```
 
-![](http://oz04bqks1.bkt.clouddn.com/18-1-24/15970309.jpg)
+![](http://oz04bqks1.bkt.clouddn.com/18-1-24/3248048.jpg)
 
 ## Examples
 
