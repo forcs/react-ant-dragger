@@ -1,6 +1,6 @@
 {
   "name": "react-ant-dragger",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Component-based drag and drop for React.js",
   "main": "dist/ant-dragger.min.js",
   "repository": "https://github.com/forcs/react-ant-dragger.git",

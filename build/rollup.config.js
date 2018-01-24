@@ -28,7 +28,7 @@ function config (prod) {
     input: 'src/index.js',
     output: {
       file: `dist/ant-dragger${min}.js`,
-      format: 'cjs',
+      format: 'umd',
       name: 'AntDragger',
       exports: 'named',
       sourcemap: true,
